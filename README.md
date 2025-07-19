@@ -1,20 +1,24 @@
 # Instagram Direct Media URL Extractor
 
-A lightweight API service that extracts direct media URLs from Instagram posts, reels, and videos.
+A lightweight API that extracts direct media URLs from Instagram posts, reels, and videos.
 
 ## Features
 
-- Extract direct URLs from Instagram posts
-- Support for images, videos, and posts with multiple images
-- Automatic fallback to proxyless mode
-- Simple JSON response format
+- Get direct URLs for images and videos
+- Supports posts with multiple media items (carousels)
+- Automatically falls back to proxyless mode
+- Clean and simple JSON output
 
-## Usage
+## Live Demo
 
-### API Endpoints
+You can test the API at:  
+🔗 **https://insta.selfhoster.nl/**  
+⚠️ *Note: This demo uses a free proxy and may not always be reliable.*
 
-- `GET /`: Shows usage information
-- `GET /dl?url=INSTAGRAM_URL`: Returns direct URLs to media
+## API Endpoints
+
+- `GET /` — Basic usage info
+- `GET /dl?url=INSTAGRAM_URL` — Extracts direct media URLs
 
 ### Example Request
 
@@ -33,34 +37,41 @@ GET /dl?url=https://www.instagram.com/p/ABCDEFGH/
 }
 ```
 
-## Setup
+## Getting Started
 
-1. Clone the repository
+1. Clone the repository:
+
+   ```sh
+   git clone https://github.com/mustafachyi/Instagram-Direct-Media-URL-Extractor.git
+   cd Instagram-Direct-Media-URL-Extractor
+   ```
+
 2. Install dependencies:
+
    ```sh
    bun install
    ```
-3. Run the server:
+
+3. Start the server:
+
    ```sh
    bun start
    ```
 
 ## Environment Variables
 
-- `PORT` - Server port (default: 3000)
-- `PROXY_URL` - HTTP proxy URL (optional)
+- `PORT` — Port for the server (default: `3000`)
+- `PROXY_URL` — Optional HTTP proxy URL
 
 ## Running Modes
 
-The API can operate in two modes:
-
-- **Proxy Mode**: Uses the provided HTTP proxy to make requests to Instagram
-- **Proxyless Mode**: Makes direct requests to Instagram without a proxy
+- **Proxy Mode**: Uses the `PROXY_URL` to make requests to Instagram
+- **Proxyless Mode**: Direct requests to Instagram (may be rate-limited)
 
 ## License
 
-MIT
+MIT License
 
 ## Credits
 
-This project was inspired by [instagram-direct-url](https://github.com/victorsouzaleal/instagram-direct-url)
+Inspired by [instagram-direct-url](https://github.com/victorsouzaleal/instagram-direct-url)
