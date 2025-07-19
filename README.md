@@ -17,13 +17,13 @@ You can test the API at:
 
 ## API Endpoints
 
-- `GET /` — Basic usage info
+- `GET /` — Basic usage info  
 - `GET /dl?url=INSTAGRAM_URL` — Extracts direct media URLs
 
 ### Example Request
 
 ```sh
-GET /dl?url=https://www.instagram.com/p/ABCDEFGH/
+GET /dl?url=https://www.instagram.com/p/BgSlRglAKBn
 ```
 
 ### Example Response
@@ -31,8 +31,7 @@ GET /dl?url=https://www.instagram.com/p/ABCDEFGH/
 ```json
 {
   "urls": [
-    "https://scontent-dus1-1.cdninstagram.com/v/t51.2885-15/520228584_18520721344034594_n.jpg?...",
-    "https://scontent-dus1-1.cdninstagram.com/v/t51.2885-15/520742356_18520721368034594_n.jpg?..."
+    "https://scontent-fra3-1.cdninstagram.com/o1/v/t16/f2/m84/AQOSM1RUWv-dukL6Q6ctpt60upNiJLWXk_iXV0Ee9YKYfrt9eMc_LQziON4Tgme8K4i3ar5Rcv5zQKacoeU7nq9VVLXLs7R3BSPTxgY.mp4?stp=dst-mp4&efg=eyJxZV9ncm91cHMiOiJbXCJpZ193ZWJfZGVsaXZlcnlfdnRzX290ZlwiXSIsInZlbmNvZGVfdGFnIjoidnRzX3ZvZF91cmxnZW4uZmVlZC5jMi42NDAuYmFzZWxpbmUifQ&_nc_cat=103&vs=851637283349429_3931091210&_nc_vs=HBksFQIYTGlnX2JhY2tmaWxsX3RpbWVsaW5lX3ZvZC9DRjQ4Qjk5MzAyMkU2RDFDQ0Q1RTE2M0RBQURENzVCOV92aWRlb19kYXNoaW5pdC5tcDQVAALIARIAFQIYOnBhc3N0aHJvdWdoX2V2ZXJzdG9yZS9HRWVhWkJkTUVkWjc1emtCQUtIM0JORGpMZUptYnBrd0FBQUYVAgLIARIAKAAYABsAFQAAJvzMh4fxlOQBFQIoAkMzLBdAIO6XjU%2FfOxgSZGFzaF9iYXNlbGluZV8xX3YxEQB16gdl8J0BAA%3D%3D&_nc_rid=67e894ed42&ccb=9-4&oh=00_AfR5PWU9vZN2NL6Apkjx3HoN36viC7O0hDoTJNqxqgRafA&oe=687DF52A&_nc_sid=d885a2"
   ]
 }
 ```
@@ -65,8 +64,8 @@ GET /dl?url=https://www.instagram.com/p/ABCDEFGH/
 
 ## Running Modes
 
-- **Proxy Mode**: Uses the `PROXY_URL` to make requests to Instagram
-- **Proxyless Mode**: Direct requests to Instagram (may be rate-limited)
+- **Proxy Mode**: Uses the `PROXY_URL` to make requests to Instagram  
+- **Proxyless Mode**: Makes requests directly to Instagram (may be rate-limited)
 
 ## License
 
