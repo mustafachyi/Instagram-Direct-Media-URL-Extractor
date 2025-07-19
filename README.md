@@ -31,6 +31,7 @@ GET /dl?url=https://www.instagram.com/p/ABCDEFGH/
     "https://scontent-dus1-1.cdninstagram.com/v/t51.2885-15/520742356_18520721368034594_n.jpg?..."
   ]
 }
+```
 
 ## Setup
 
