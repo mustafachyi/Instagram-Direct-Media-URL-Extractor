@@ -1,0 +1,16 @@
+{
+  "name": "instagram-direct-media-URL-extractor",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "bun run --watch src/index.ts",
+    "start": "bun run src/index.ts",
+    "build": "bun build src/index.ts --outdir ./dist --target bun"
+  },
+  "dependencies": {
+    "hono": "*"
+  },
+  "devDependencies": {
+    "@types/bun": "latest"
+  }
+}
