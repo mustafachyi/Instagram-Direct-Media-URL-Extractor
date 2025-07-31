@@ -6,7 +6,8 @@ A lightweight API that extracts direct media URLs from Instagram posts, reels, a
 
 - Get direct URLs for images and videos
 - Supports posts with multiple media items (carousels)
-- Automatically falls back to proxyless mode
+- In-memory caching to improve performance for repeated requests
+- Supports both proxy and proxyless modes
 - Clean and simple JSON output
 
 ## Live Demo
@@ -61,6 +62,7 @@ GET /dl?url=https://www.instagram.com/p/BgSlRglAKBn
 
 - `PORT` — Port for the server (default: `3000`)
 - `PROXY_URL` — Optional HTTP proxy URL
+- `CACHE_TTL_SECONDS` - Cache duration for API responses (default: `3600`)
 
 ## Running Modes
 
